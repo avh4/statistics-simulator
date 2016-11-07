@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "You Are a Statistic",
+  "description": "Statistic simulator",
+  "version": "1.0",
+
+  "permissions": [
+    "http://localhost/*"
+  ],
+  "content_scripts": [
+    { "matches": ["http://localhost/*"], "js": ["index.js"] }
+  ],
+  "web_accessible_resources": [
+    "crash.png"
+  ]
+}
